@@ -1,33 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="header__logo-container">
-            <img src="./assets/icons/batata.svg" alt="">
+      <div class="header__logo-container">
+        <img src="./assets/icons/batata.svg" alt="" />
+        <p>Batatabit</p>
+      </div>
+      <div class="header__title-container">
+        <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
+        <p>
+          Batatabit te ayuda a navegar entre los diferentes precios y
+          tendencias.
+        </p>
+        <div class="header__title-container--button">
+          <a href="#plans"
+            >Conoce nuestros planes
+            <span
+              ><img
+                src="./assets/icons/down-arrow.svg"
+                alt=""
+                srcset="" /></span
+          ></a>
         </div>
-        <div class="header__title-container">
-            <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
-            <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="" class="header__button">Conoce nuestros planes <span>i</span></a>
-        </div>
+      </div>
     </header>
+    <!-- Las etiquetas BEM, a mi parecer estan mal implementadas, no deberian de llevar header, es redundante, aunque pueda ser que no... -->
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+      <section class="main__exchanges-section">
+        <img
+          class="main__exchanges-section--img"
+          src="./assets/img/Bitcoin.svg"
+          alt=""
+        />
+        <div class="main__info">
+          <h2>Visibilizamos todas las tasas de cambio.</h2>
+          <p>
+            Traemos información en tiempo real de las casas de cambio y las
+            monedas más importantes del mundo.
+          </p>
+        </div>
+        <div class="main__coins">
+          <h3>Monedas</h3>
+          <div class="main__coins--grid">
+            <p>Bitcoin</p>
+            <p>Ethereum</p>
+            <p>Ripple</p>
+            <p>Stellar</p>
+            <p>$ 1.96</p>
+            <p>$ 0.07</p>
+            <p>$ 2.15</p>
+            <p>$ 4.96</p>
+            <img src="./assets/icons/right-arrow.svg" />
+          </div>
+          <div class="main__update-button">
+            <p><b>Actualizado:</b> 19 Julio 23:45</p>
+          </div>
+        </div>
+      </section>
+      <section class="main__benefits-section">
+        <div class="main__benefits-section--title">
+          <h2>Creamos un producto sin comparación.</h2>
+          <p>Confiable y diseñado para su uso diario.</p>
+        </div>
+        <div class="main__benefits-section--container">
+          <img src="./assets/icons/clock.svg" alt="" />
+          <h3>Tiempo real</h3>
+          <p>
+            Nuestro API toma información minuto a minuto sobre las tasas que más
+            determinan el comportamiento.
+          </p>
+        </div>
+        <div class="main__benefits-section--container">
+          <img src="./assets/icons/eye.svg" alt="" />
+          <h3>No hay tasas escondidas</h3>
+          <p>
+            Ni en la compra o al momento de exit, Batabit siempre te muestra el
+            costo real de lo que estás adquiriendo.
+          </p>
+        </div>
+        <div class="main__benefits-section--container">
+          <img src="./assets/icons/dollar-sign.svg" alt="" />
+          <h3>Compara monedas</h3>
+          <p>
+            No más rumores, con Babtabit sabrás el valor real de cada moneda en
+            el mercado actual.
+          </p>
+        </div>
+        <div class="main__benefits-section--container">
+          <img src="./assets/icons/check-circle.svg" alt="" />
+          <h3>Información confiable</h3>
+          <p>
+            Nuestras fuentes están 100% verificadas y continuamos auditando su
+            contenido mientras se actualizan.
+          </p>
+        </div>
+      </section>
+      <section class="main__plans-section" id="plans">
+        <div class="main__plans-section--img-container">
+          <h2>Conócelo hoy.</h2>
+        </div>
+        <div class="main__plans-section--title">
+          <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+          <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+        </div>
+        <section class="main__plans-section--slide">
+          <div class="main__plans-section--plans">
+            
+            <h3>Pago Anual</h3>
+            <h2><span>$</span>99</h2>
+            <!-- Puedo hacer el simbolo de dolar con un pseudoelemento o con otra caja div -->
+            <p>*Ahorras $129 comparado al plan mensual.</p>
+            <button>
+              Escoger este
+              <img src="./assets/icons/orange-right-arrow.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="main__plans-section--plans">
+            <p class="reference-button">Recomendado</p>
+            <h3>Pago Anual</h3>
+            <h2><span>$</span>99</h2>
+            <!-- Puedo hacer el simbolo de dolar con un pseudoelemento o con otra caja div -->
+            <p>*Ahorras $129 comparado al plan mensual.</p>
+            <button>
+              Escoger este
+              <img src="./assets/icons/orange-right-arrow.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="main__plans-section--plans">
+            
+            <h3>Pago Anual</h3>
+            <h2><span>$</span>99</h2>
+            <!-- Puedo hacer el simbolo de dolar con un pseudoelemento o con otra caja div -->
+            <p>*Ahorras $129 comparado al plan mensual.</p>
+            <button>
+              Escoger este
+              <img src="./assets/icons/orange-right-arrow.svg" alt="" />
+            </button>
+          </div>
+        </section>
+      </section>
     </main>
     <footer>
-        
+      <ul>
+        <li>Linkedin</li>
+        <li>Crunchbase</li>
+        <li>Hackernews</li>
+      </ul>
+      <div class="footer__container-img">
+        <p>® Batatabit 2020</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
