@@ -303,8 +303,15 @@ main,
   text-align: center;
 }
 
-main .main__benefits-section--container {
+main .main__benefits-section--container{
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .main__benefits-section--container .main__benefits-section--card {
+  width: 100%;
   max-width: 600px;
   background-color: #282623;
   padding: 20px;
@@ -313,12 +320,12 @@ main .main__benefits-section--container {
   text-align: start;
 }
 
-main .main__benefits-section--container h3 {
+main .main__benefits-section--card h3 {
   color: var(--just-white);
   margin-bottom: 1rem;
 }
 
-main .main__benefits-section--container img {
+main .main__benefits-section--card img {
   margin-bottom: 5px;
 }
 
@@ -376,8 +383,9 @@ main .main__plans-section--plans {
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   border-radius: 8px;
   min-width: 190px;
+  max-width: 215px;
   height: 247px;
-  margin: 0 10px 0;
+  margin: 0 15px 0;
   padding: 0 1.6rem 0;
   display: flex;
   scroll-snap-align: center; /* Al scrollear centra automaticamente el elemento que tenemos a la vista en el centro de nuestra atencion */
