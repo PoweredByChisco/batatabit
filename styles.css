@@ -441,7 +441,7 @@ main .main__plans-section--plans button img {
 main .main__plans-section--plans .reference-button { /*otra puede ser que se reajuste el tamaño de todas las tarjetas para que se vean igual independientemente de si este el boton recomendado o no. En cuenato a la imagen se me ocurre que para que no se esconda en el cuadrado al crecer, este mismo crezca, en vez de autoajustar la imagen */
   position: relative;
   margin-bottom: initial;
-  top: 0;
+  top: -10px;
   color: var(--just-white);
   font-size: 12px;
   padding: 8px;

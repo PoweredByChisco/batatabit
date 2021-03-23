@@ -1,19 +1,37 @@
-main .main__benefits-section--container{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+main .main__benefits-section--container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 main .main__benefits-section--container .main__benefits-section--card {
-    width: 100%;
-    max-width: 400px;
-    background-color: #282623;
-    padding: 20px;
-    border-radius: 4px;
-    margin: 0 10px;
-    margin-bottom: 16px;
-    text-align: start;
-    height: 150px;
-  }
+  width: 100%;
+  max-width: 388px;
+  background-color: #282623;
+  padding: 20px;
+  border-radius: 4px;
+  margin: 0 10px;
+  margin-bottom: 16px;
+  text-align: start;
+  height: 150px;
+}
+
+main .main__plans-section--img-container {
+  background-image: url(../assets/img/bitcoinbaby2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -500px;
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  margin-bottom: 64px;
+}
+
+.planes-container--slider::-webkit-scrollbar {
+  visibility: hidden;
+}
+.planes-container--slider::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
