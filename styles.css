@@ -163,7 +163,7 @@ main .main__coins {
   min-width: 197px;
   width: 70%;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   font-family: "Inter", sans-serif;
 }
 
@@ -172,6 +172,15 @@ main .main__coins h3 {
   line-height: 23px;
   font-weight: 700;
   color: #ff9536;
+  margin-left: 11px;
+  margin-bottom: 12px;
+}
+
+main .main__coins h3:nth-of-type(2) {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  color: var(--secondary-blue);
   margin-left: 11px;
   margin-bottom: 12px;
 }
@@ -190,6 +199,26 @@ main .main__coins--grid p {
   font-weight: 500;
   border-radius: 8px 0px 0px 0px;
   background: white;
+}
+
+main .main__coins--grid2 {
+  display: grid;
+  grid-template-columns: 49% 49% 2%;
+  grid-template-rows: 25% 25% 25% 25%;
+  margin-bottom: 24px;
+}
+
+main .main__coins--grid2 p {
+  font-size: 16px;
+  padding: 10px 12px;
+  color: #b5b0ac;
+  font-weight: 500;
+  border-radius: 8px 0px 0px 0px;
+  background: white;
+}
+
+main .main__coins .main__coins--grid2 .grid-exception {
+  background-image: none;
 }
 
 main .main__coins--grid p:nth-child(n + 5) {
@@ -234,9 +263,11 @@ main .main__exchanges-section .main__coins p:nth-child(6) {
   grid-column: 2;
   grid-row-start: 2;
   border-bottom: #eeeeee solid 1px;
-  background-image: url(./assets/icons/trending-up.svg);
   background-repeat: no-repeat;
   background-position: 80%;
+}
+main .main__exchanges-section .main__coins .main__coins--grid p:nth-child(6) {
+  background-image: url(./assets/icons/trending-up.svg);
 }
 main .main__exchanges-section .main__coins p:nth-child(7) {
   grid-column: 2;
@@ -264,6 +295,19 @@ main .main__update-button {
   margin: 0 auto 65px;
   height: 31px;
   background-color: var(--soft-orange);
+  font-size: 16px;
+  border-radius: 8px;
+  color: var(--warm-black);
+}
+
+main .main__update-button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto 65px;
+  height: 31px;
+  background-color: var(--soft-blue);
   font-size: 16px;
   border-radius: 8px;
   color: var(--warm-black);
@@ -303,7 +347,7 @@ main,
   text-align: center;
 }
 
-main .main__benefits-section--container{
+main .main__benefits-section--container {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -368,7 +412,7 @@ main .main__plans-section--title p {
   line-height: 18px;
 }
 
-main .main__plans-section .main__plans-section--slide{
+main .main__plans-section .main__plans-section--slide {
   display: flex;
   /* gap: 30px; */ /* Esto se aplica por medio de flexbox, y nos permite generar automaticamente un espacio entre los elementos, sin embargo aun no ha sido aprobado de manera global por muchos navegadores */
   align-items: center;
@@ -406,7 +450,7 @@ main .main__plans-section--plans h2 {
   margin-bottom: 6px;
 }
 
-main .main__plans-section--plans h2 span{
+main .main__plans-section--plans h2 span {
   font-size: 12px;
   position: relative;
   bottom: 28px;
@@ -438,7 +482,8 @@ main .main__plans-section--plans button img {
   margin-left: 7px;
 }
 
-main .main__plans-section--plans .reference-button { /*otra puede ser que se reajuste el tamaño de todas las tarjetas para que se vean igual independientemente de si este el boton recomendado o no. En cuenato a la imagen se me ocurre que para que no se esconda en el cuadrado al crecer, este mismo crezca, en vez de autoajustar la imagen */
+main .main__plans-section--plans .reference-button {
+  /*otra puede ser que se reajuste el tamaño de todas las tarjetas para que se vean igual independientemente de si este el boton recomendado o no. En cuenato a la imagen se me ocurre que para que no se esconda en el cuadrado al crecer, este mismo crezca, en vez de autoajustar la imagen */
   position: relative;
   margin-bottom: initial;
   top: -10px;
@@ -450,7 +495,7 @@ main .main__plans-section--plans .reference-button { /*otra puede ser que se rea
   font-weight: 700;
 }
 
-.hidden{
+.hidden {
   visibility: hidden;
 }
 
