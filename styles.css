@@ -319,6 +319,11 @@ main .main__update-button p {
 
 /* benefits-section */
 
+main .main__benefits-section img{
+  position: relative;
+  top: -10px;
+}
+
 main .main__benefits-section {
   background-color: var(--warm-black);
   display: flex;
