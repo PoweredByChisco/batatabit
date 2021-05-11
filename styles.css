@@ -76,6 +76,7 @@ header {
   min-width: 288px;
   max-width: 600px;
   color: var(--just-white);
+  
 }
 
 .header__title-container h1 {
